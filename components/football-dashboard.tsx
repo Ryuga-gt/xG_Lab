@@ -431,12 +431,12 @@ export default function FootballDashboard({ data, eplAdvancedData }: DashboardPr
     const lowered = search.trim().toLowerCase();
     const base = lowered
       ? selectedCombo.leaderboard.filter((row) => {
-          return (
-            row.name.toLowerCase().includes(lowered) ||
-            row.club.toLowerCase().includes(lowered) ||
-            row.country.toLowerCase().includes(lowered)
-          );
-        })
+        return (
+          row.name.toLowerCase().includes(lowered) ||
+          row.club.toLowerCase().includes(lowered) ||
+          row.country.toLowerCase().includes(lowered)
+        );
+      })
       : selectedCombo.leaderboard;
 
     return sortLeaderboard(base, sortField, sortDirection);
@@ -721,8 +721,8 @@ export default function FootballDashboard({ data, eplAdvancedData }: DashboardPr
       <div className="dashboard-shell">
         <header className="dashboard-hero animate-rise">
           <div>
-            <p className="eyebrow">Cyber Football Intelligence</p>
-            <h1>PitchPulse Dashboard</h1>
+            <p className="eyebrow">Football Science</p>
+            <h1>xG Lab Dashboard</h1>
             <p className="hero-copy">
               Interactive football analytics inspired by FBref, xGStat, and Opta Analyst, combining
               Kaggle player-scores, StatsBomb event data, and Opta-style attacking outputs.

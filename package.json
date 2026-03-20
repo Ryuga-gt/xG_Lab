@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "data:download": "python3 scripts/download_kaggle_data.py",
+    "data:download": "python scripts/download_kaggle_data.py",
     "data:prepare": "tsx scripts/build_dashboard_data.ts && python3 scripts/build_epl_advanced_data.py",
     "data:build": "npm run data:download && npm run data:prepare"
   },

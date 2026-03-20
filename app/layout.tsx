@@ -16,7 +16,7 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "PitchPulse Football Dashboard",
+  title: "xG Lab Dashboard",
   description:
     "Interactive football analytics dashboard built on Kaggle player-scores data and designed for Vercel deployment.",
 };

@@ -1,4 +1,4 @@
-# PitchPulse Football Dashboard
+# xG Lab Football Dashboard
 
 Interactive football analytics dashboard built with Next.js and Recharts.
 
